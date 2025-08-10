@@ -19,6 +19,8 @@ require("lazy").setup({
     -- add LazyVim and import its plugins
     { "LazyVim/LazyVim", import = "lazyvim.plugins" },
     -- import/override with your plugins
+    -- Import LazyVim's TypeScript extra for proper tsserver setup
+    { import = "lazyvim.plugins.extras.lang.typescript" },
     { import = "plugins" },
   },
   defaults = {
